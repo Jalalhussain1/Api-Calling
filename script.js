@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cityTemp = document.getElementById('city-temp');
 
     async function getData(cityName) {
-        const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=544293245cc84b5ba01183422241011&q=${cityName}&aqi=yes`);
+        const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=544293245cc84b5ba01183422241011&q=${cityName}&aqi=yes`);
         return await promise.json();
     }
 
